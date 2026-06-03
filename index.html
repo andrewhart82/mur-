@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>yo dawg</title>
+    <link rel="shortcut icon" type="image/png" href="image/favicon7.png.ico">
+    <style>
+        /* Base page styles */
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #fcfcfc;
+            color: #333333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Responsive Header */
+        header {
+            font-size: clamp(28px, 5vw, 45px); /* Scales dynamic with screen size */
+            text-align: center;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        /* Intro Text */
+        .intro-text {
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 40px auto;
+        }
+
+        /* Flexbox Grid Container for Navigation Buttons */
+        .button-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 50px;
+        }
+
+        /* Styled Action Buttons */
+        .btn-link {
+            text-decoration: none;
+        }
+        .btn-link button {
+            background-color: blue; 
+            color: white;
+            cursor: pointer; 
+            border-radius: 100px; 
+            border: outset blue 3px;
+            height: 45px; 
+            padding: 0 25px; /* Replaced fixed widths with fluid padding */
+            font-family: inherit;
+            font-weight: bold;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+        .btn-link button:hover {
+            background-color: darkblue;
+            transform: scale(1.05);
+        }
+
+        /* Sticky Responsive Footer */
+        footer {
+            margin-top: auto;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 14px;
+            color: #777777;
+            border-top: 1px solid #eeeeee;
+        }
+    </style>
+</head>
+<body>
+
+    <header>MEDICAL RESEARCH</header>
+    
+    <p class="intro-text">
+        Welcome to Medical Undergraduate Research! We are glad that you found us. Our aim is to 
+        provide the ability to publish without the headache. Our mission is to further the work of science.
+        We have our criteria located here <a href="https://docs.google.com/document/d/1gdD_zB0JvRiO5_f_IaHT8qDHIwqkO3MM/edit" target="_blank">criteria document</a>. 
+        This is a grass roots approach, but we will publish peer reviewed papers. I want you to email me your work 
+        and we will start the work of peer review and publishing. 
+    </p>
+
+    <!-- Buttons wrapper moved cleanly into body container -->
+    <nav class="button-grid">
+        <a class="btn-link" href="psychology.html" target="_blank"><button>PSYCHOLOGY</button></a>
+        <a class="btn-link" href="chemistry.html" target="_blank"><button>CHEMISTRY</button></a>
+        <a class="btn-link" href="biology.html" target="_blank"><button>BIOLOGY</button></a>
+        <a class="btn-link" href="physics.html" target="_blank"><button>PHYSICS</button></a>
+        <a class="btn-link" href="alliedhealth.html" target="_blank"><button>ALLIED HEALTH</button></a>
+        <a class="btn-link" href="miscellaneous.html" target="_blank"><button>MISCELLANEOUS</button></a>
+        <a class="btn-link" href="other.html" target="_blank"><button>OTHER</button></a>
+    </nav>
+
+    <footer>ezra is cool</footer>
+    
+</body>
+</html>
